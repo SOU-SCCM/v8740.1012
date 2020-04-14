@@ -20,7 +20,7 @@ START /WAIT TIMEOUT /T 15 /NOBREAK >NUL
 
 :LOCALINSTALL
 REM Install SCCM Client from local source file
-start C:\Windows\Temp\v8740.1012-master\ccmsetup.exe /UsePKICert /NoCRLCheck /mp:ibcm2.dts.utah.gov CCMHOSTNAME=ibcm2.dts.utah.gov SMSSITECODE=P01 FSP=ibcm.dts.utah.gov
+start C:\Windows\Temp\v8740.1012-master\ccmsetup.exe /UsePKICert /NoCRLCheck CCMHOSTNAME=ibcm2.dts.utah.gov SMSSITECODE=P01 FSP=ibcm.dts.utah.gov
 
 :DONE
 echo SCCM Rollback Complete
