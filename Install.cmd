@@ -1,3 +1,4 @@
+echo %COMPUTERNAME%
 :STEP1 
 REM Check for SCCM Client Services
 sc query "CCMEXEC"
